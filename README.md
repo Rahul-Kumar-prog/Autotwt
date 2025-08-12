@@ -1,16 +1,54 @@
-# Turborepo Tailwind CSS starter
+# Autotwt
+AutoTWT is a flexible social media automation tool that eliminates repetitive posting across multiple platforms. Write once, post everywhere.
+## Pre-requisites
+As of now this project only support `X(Twitter)`. We will add more platform in the future.
 
-This Turborepo starter is maintained by the Turborepo core team.
+You need to have the X(Twitter) Credintials 
+- Access Key
+- Access Secret
+- Consumer Key
+- Consumer Secret
 
-## Using this example
+these 4 things you need it.
+```sh
+X_CONSUMER_KEY = xyz
+X_CONSUMER_SECRET = xyz
+X_ACCESS_TOKEN = xyz
+X_ACCESS_SECRET = xyz
+```
+
+
+### what you will going to see upcoming furutre features
+- Schedule you posts.
+- Add Linkedin Platform 
+## Build locally
+If you want to Use it. you can use it locally on you system. by running the following commands.
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest -e with-tailwind
+git clone "repository_url"
+cd Autowtwt
+```
+Create a .env file in the Root directory 
+```sh
+touch .env
+```
+Run the Frontend.( it will run on localhost:3001)
+```sh
+pnpm run dev
+```
+Start the Backend
+```sh
+cd apps/backend/
+air 
 ```
 
-## What's inside?
+Now you can able to use it. 
+
+
+
+<!-- ## What's inside?
 
 This Turborepo includes the following packages/apps:
 
@@ -55,4 +93,4 @@ This Turborepo has some additional tools already setup for you:
 - [Tailwind CSS](https://tailwindcss.com/) for styles
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- [Prettier](https://prettier.io) for code formatting -->

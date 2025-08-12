@@ -1,0 +1,92 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Backend",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "build",
+                "-o",
+                "main",
+                "main.go"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/apps/backend"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$go"
+            ]
+        },
+        {
+            "label": "Run Backend",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "run",
+                "main.go"
+            ],
+            "group": "test",
+            "options": {
+                "cwd": "${workspaceFolder}/apps/backend"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$go"
+            ]
+        },
+        {
+            "label": "Test Backend",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "test",
+                "./..."
+            ],
+            "group": "test",
+            "options": {
+                "cwd": "${workspaceFolder}/apps/backend"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$go"
+            ]
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "go",
+            "args": [
+                "clean",
+                "-cache"
+            ],
+            "group": "build",
+            "options": {
+                "cwd": "${workspaceFolder}/apps/backend"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}
