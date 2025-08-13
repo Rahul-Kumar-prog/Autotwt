@@ -1,15 +1,15 @@
 # Autotwt
 AutoTWT is a flexible social media automation tool that eliminates repetitive posting across multiple platforms. Write once, post everywhere.
-## Pre-requisites
-As of now this project only support `X(Twitter)`. We will add more platform in the future.
+## Prerequisites
+Currently, this project only supports X(Twitter). More platforms will be added in the future.
 
-You need to have the X(Twitter) Credintials 
-- Access Key
+You need to have the following X (Twitter) credentials:
+- Access Token
 - Access Secret
 - Consumer Key
 - Consumer Secret
 
-these 4 things you need it.
+Example .env variables:
 ```sh
 X_CONSUMER_KEY = xyz
 X_CONSUMER_SECRET = xyz
@@ -18,27 +18,28 @@ X_ACCESS_SECRET = xyz
 ```
 
 
-### what you will going to see upcoming furutre features
-- Schedule you posts.
-- Add Linkedin Platform 
+Upcoming Features
+- Schedule your posts.
+- Add LinkedIn integration.
+- 
 ## Build locally
-If you want to Use it. you can use it locally on you system. by running the following commands.
+If you want to use it locally on your system, run the following commands:
 
-Run the following command:
+Clone the repository:
 
 ```sh
 git clone "repository_url"
 cd Autowtwt
 ```
-Create a .env file in the Root directory 
+Create a .env file in the root directory: 
 ```sh
 touch .env
 ```
-Run the Frontend.( it will run on localhost:3001)
+Run the frontend (it will run on localhost:3001):
 ```sh
 pnpm run dev
 ```
-Start the Backend
+Start the backend:
 ```sh
 cd apps/backend/
 air 
