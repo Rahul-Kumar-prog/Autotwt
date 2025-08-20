@@ -9,6 +9,7 @@ You need to have the following X (Twitter) credentials:
 - Consumer Key
 - Consumer Secret
 
+Set Enviroment variables, create .env file in the root directory.
 Example .env variables:
 ```sh
 X_CONSUMER_KEY = xyz
